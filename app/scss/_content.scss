@@ -105,15 +105,16 @@ main.container-fluid, .leftblock, .centerblock{
   box-sizing: border-box;
   overflow: hidden;
 }
-//.centerblock{
-//  float: right;
-//  &::after {
-//    content: "";
-//    display: table;
-//    clear: both;
-//  }
-//}
+.centerblock{
+  float: right;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 .products{
+  max-height: 900px;
   figure{
     box-sizing: border-box;
     border-right: remy(15) solid $white;
