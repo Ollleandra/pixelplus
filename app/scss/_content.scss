@@ -105,14 +105,14 @@ main.container-fluid, .leftblock, .centerblock{
   box-sizing: border-box;
   overflow: hidden;
 }
-//.centerblock{
-//  float: right;
-//  &::after {
-//    content: "";
-//    display: table;
-//    clear: both;
-//  }
-//}
+.centerblock{
+  float: right;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 .products{
   figure{
     box-sizing: border-box;
