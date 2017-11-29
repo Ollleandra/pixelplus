@@ -28,7 +28,8 @@ figure{
   min-height: 230px;
   background: $gray-light;
   .row{
-    min-height:230px;
+    min-height: 230px;
+    height:230px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,6 +48,11 @@ figure{
       &:hover{
         transform: scale(1.1);
       }
+    }
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
     }
   }
   rect{
@@ -69,7 +75,9 @@ figure{
 }
 .contacts{
   position: absolute;
+  top: 0;
   right: 0;
+  margin-top: remy(35);
   margin-right: remy(10);
   text-align: right;
   a{
