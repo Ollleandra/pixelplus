@@ -114,11 +114,10 @@ main.container-fluid, .leftblock, .centerblock{
   }
 }
 .products{
-  max-height: 900px;
   figure{
     box-sizing: border-box;
-    border-right: remy(15) solid $white;
-    border-top: remy(15) solid $white;
+    //border-right: remy(15) solid $white;
+    //border-top: remy(15) solid $white;
     padding: remy(20) remy(20) 0px;
     background-color: #efefef;
     text-align: center;
