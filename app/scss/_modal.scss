@@ -1,0 +1,98 @@
+.modal{
+  text-align: center;
+  .modal-header{
+    padding: 0rem;
+    background-color: transparent;
+    text-align: right;
+    button{
+      display: inline-block;
+      margin-right: remy(-30);
+      width: remy(30);
+      height: remy(30);
+      background-color: $warm-grey;
+      color: $white;
+      font-size: remy(25);
+      line-height: 1;
+      outline: 0;
+      font-weight: normal;
+      border: none;
+      opacity: 0.8;
+      transition: all 0.3s ease-out;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+  .modal-content{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0rem auto;
+    max-width: 460px;
+    border-radius: remy(1);
+  }
+  .modal-body{
+    background-color: $white;
+  }
+  h4{
+    font-size: remy(24);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .form-group>div{
+    margin-bottom: remy(10);
+  }
+  label{
+    font-size: 1rem;
+  }
+  input, textarea{
+    margin: 0rem auto;
+    border: remy(1) solid $gray-light;
+    display: inline-block;
+    width: 70%;
+    height: remy(40);
+    outline: none;
+    text-indent: remy(10);
+  }
+  input::-webkit-input-placeholder{
+    color: $red;
+    font-style: italic;
+  }
+  input:-moz-placeholder{
+    color: $red;
+    font-style: italic;
+  }
+  input::-moz-placeholder{
+    color: $red;
+    font-style: italic;
+  }
+  input:-ms-input-placeholder{
+    color: $red;
+    font-style: italic;
+  }
+  input:invalid:not(:focus){
+    border-color: $red;
+    box-shadow: inset 0px 0px 5px $red;
+    outline: none;
+  }
+  textarea{
+    height: remy(140);
+  }
+  .btn{
+    display: inline-block;
+    background-color: $warm-grey;
+    color: $white;
+    font-size: remy(17.7);
+    font-weight: bold;
+    letter-spacing: remy(0.8);
+    text-transform: uppercase;
+    border: none;
+    height: remy(40);
+    width: 30%;
+    opacity: 0.8;
+    transition: all 0.3s ease-out;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}

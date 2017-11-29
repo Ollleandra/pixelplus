@@ -1,0 +1,205 @@
+main .content{
+  margin-top: remy(20);
+}
+.breadcrumb{
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items: center;
+  .active{
+    text-decoration: none;
+  }
+  li, a{
+    font-size: 1rem;
+    line-height: 1.29;
+    letter-spacing: remy(0.4);
+    text-align: left;
+    color: $warm-grey;
+    text-decoration: underline;
+  }
+  a:hover{
+    color: $black;
+  }
+  a::after{
+    display: inline-block;
+    content: '\2044';
+    margin: 0px remy(5);
+  }
+}
+main.container-fluid{
+  padding: 0px remy(10);
+}
+.leftblock{
+  float: left;
+  ul{
+    margin: 0px;
+    padding: 0px;
+  }
+  ul>li {
+    list-style: none;
+    a{
+      font-size: remy(18);
+      font-weight: normal;
+      line-height: 1.67;
+      letter-spacing: remy(0.5);
+      color: $warm-grey;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+      &.active-items{
+        text-decoration: underline;
+      }
+    }
+  }
+  ol{
+    padding-left:remy(30);
+  }
+  ol>li {
+    list-style: disc;
+    color: $warm-grey;
+    a{
+      font-size: remy(14);
+      line-height: 1.57;
+      letter-spacing: remy(0.4);
+      &:hover{
+        text-decoration: underline;
+        color: $black;
+      }
+      &.active-item{
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+  .price{
+    margin-top:remy(220);
+    margin-bottom: remy(20);
+
+    a{
+      position: relative;
+      font-size: remy(30);
+      font-weight: bold;
+      font-style: normal;
+      line-height: 0.83;
+      letter-spacing: remy(0.8);
+      color: $greyish-brown;
+      opacity: 0.7;
+      text-decoration: none;
+      transition: all 0.3s ease-out;
+      span{
+        position: absolute;
+        top: remy(-110);
+        display: inline-block;
+        font-size: remy(110);
+      }
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+main.container-fluid, .leftblock, .centerblock{
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.centerblock{
+  float: right;
+}
+.products{
+  figure{
+    box-sizing: border-box;
+    border-right: remy(15) solid $white;
+    border-top: remy(15) solid $white;
+    padding: remy(20) remy(20) 0px;
+    background-color: #efefef;
+    text-align: center;
+    min-height: 400px;
+    img{
+      display: inline-block;
+      max-width: 210px;
+      max-height: 210px;
+      width: 100%;
+      height: auto;
+    }
+    &:hover{
+      background: linear-gradient(to bottom, #efefef 80%, $gray-light);
+    }
+  }
+  figcaption{
+    margin-top: remy(40);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+  }
+  .product-desc{
+    font-size: remy(17);
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: remy(0.5);
+    text-align: left;
+    color: $warm-grey;
+  }
+  .product-price{
+    margin: 0px;
+    font-size: remy(28);
+    font-weight: bold;
+    line-height: 0.64;
+    letter-spacing: remy(0.7);
+    text-align: left;
+    color: $greyish-brown;
+  }
+  .to-sell span{
+    display: inline-block;
+    color: $white;
+    font-size: remy(30);
+    transition: transform 0.3s ease-out;
+    &:hover{
+      transform: scale(1.6);
+    }
+  }
+}
+.pagination{
+  padding-left: 0rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  li{
+    margin: remy(20) remy(15);
+    text-align: center;
+  }
+  .active a{
+    font-size: remy(18);
+    line-height: 1.22;
+    color: $greyish-brown;
+  }
+  a{
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.57;
+    color: $warm-grey;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+.about-company{
+  border-top: remy(1) solid $warm-grey;
+  margin: remy(40) remy(-20);
+  padding-top: remy(10);
+  .about-desc{
+    box-sizing: border-box;
+    padding: 0rem remy(20);
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.57;
+    letter-spacing: remy(0.4);
+    text-align: left;
+    color: $warm-grey;
+  }
+}

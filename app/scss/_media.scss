@@ -1,0 +1,98 @@
+@media screen and (max-width: 767px) {
+  .header .row {
+    display: block;
+    padding: remy(20);
+  }
+  .contacts {
+    position: static;
+    text-align: left;
+  }
+
+  .menu>ul {
+    display: none;
+  }
+
+  //Menu "Hamburger"
+
+  #menu-checkbox ~ label {
+    display: block;
+  }
+  #menu-checkbox ~ ul {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 9;
+    top: 0;
+    right: -100vw;
+    bottom: -20px;
+    width: 100vw;
+    background: $warm-grey;
+    padding-top: 100px;
+    padding-right: 70px;
+    overflow: auto;
+    transition: all 0.3s ease-in-out;
+
+    li {
+      margin-bottom: remy(30);
+      border-right: none;
+      display: block;
+      text-align: right;
+      a{
+        font-size: remy(30);
+      }
+    }
+  }
+  #menu-checkbox:checked {
+    & ~ ul {
+      right: 0;
+    }
+  }
+
+  //Menu "Hamburger" End
+
+  main.container-fluid{
+    padding-left: remy(20);
+    .price{
+      display: none;
+    }
+  }
+  .products{
+    figure{
+      padding: remy(10);
+      min-height: 230px;
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      img{
+        float: left;
+        margin-right: remy(10);
+      }
+    }
+    .product-price{
+      font-size: remy(20);
+    }
+  }
+  .footer{
+    text-align: center;
+    .developer::before{
+      content: "";
+    }
+  }
+}
+@media screen and (max-width: 992px){
+  .contacts p a{
+    font-size: remy(30);
+  }
+  .menu{
+    ul a {
+      font-size: remy(20);
+    }
+  }
+}
+@media screen and (max-width: 1248px){
+  .carousel{
+    display: none;
+  }
+}

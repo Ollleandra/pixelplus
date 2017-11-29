@@ -1,0 +1,21 @@
+/* Color palette */
+$white: #ffffff;
+$warm-grey: #777777;
+$gray-light: #dcdcdc;
+$gray-lightest: #f8f8f8;
+$black: #010101;
+$greyish-brown: #444444;
+$red: #ff9999;
+
+@function remy($pxsize) {
+  @return ($pxsize/14)+rem;
+}
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+) !default;
+
+

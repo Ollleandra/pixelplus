@@ -1,0 +1,106 @@
+html{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 22px;
+}
+.wrap {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+.header, .menu, main, .footer{
+  width: 100%;
+}
+figure{
+  margin: 0px;
+}
+.header>div, .menu>ul, main, .footer>div{
+  max-width: 1000px;
+  padding: 0 remy(10);
+  margin: 0 auto;
+}
+.header  {
+  min-height: 230px;
+  background: $gray-light;
+  .row{
+    min-height:230px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.block-logo{
+  height: 100px;
+  a{
+    display: inline-block;
+    margin-right: remy(10);
+    float: left;
+    height: 100px;
+    width: 100px;
+    svg{
+      transition: transform 0.3s ease-out;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+  rect{
+    fill: $warm-grey;
+  }
+
+  figcaption{
+    margin: remy(10);
+    color: $warm-grey;
+  }
+  .name{
+    margin: 0px;
+    font-size: remy(30);
+    font-weight:bold;
+
+  }
+}
+.row{
+  position: relative;
+}
+.contacts{
+  position: absolute;
+  right: 0;
+  margin-right: remy(10);
+  text-align: right;
+  a{
+    color: $warm-grey;
+    opacity: 0.8;
+    outline: none;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  p {
+    margin-bottom: remy(10);
+    a{
+      font-family: OpenSansCondensedLight;
+      font-size: remy(40);
+      font-weight: 300;
+      font-style: normal;
+      font-stretch: condensed;
+      line-height: 1.15;
+      letter-spacing: remy(1);
+      text-decoration: none;
+    }
+  }
+  .feedback{
+    a{
+      font-size: remy(24);
+      font-weight: bold;
+      letter-spacing: remy(0.6);
+      color: $warm-grey;
+      text-decoration: underline;
+      text-decoration-style: dashed;
+    }
+  }
+}

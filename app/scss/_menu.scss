@@ -1,0 +1,71 @@
+.menu{
+  background-color: $warm-grey;
+  ul{
+    min-height: 80px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    li {
+      padding: 0px remy(20);
+      &:not(:last-of-type) {
+        border-right: remy(2) solid $white;
+      }
+    }
+    a{
+      display: inline-block;
+      padding-bottom: remy(6);
+      color: $white;
+      font-size: remy(30);
+      font-weight: normal;
+      letter-spacing: remy(0.8);
+      text-decoration: none;
+      border-bottom: remy(1) solid transparent;
+      &:hover{
+        border-bottom-color: $white;
+      }
+    }
+  }
+}
+//Menu "Hamburger"
+
+#menu-checkbox,  #menu-checkbox~label {
+  display: none;
+  z-index: 10;
+}
+.hamburger{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  margin-top: remy(45);
+  margin-right: remy(20);
+  background-color: $white;
+  padding: 15px 15px 12px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  .line{
+    width: 26px;
+    height: 2px;
+    background-color: $warm-grey;
+    display: block;
+    margin: 0  0 5px;
+    transition: all 0.3s ease-in-out;
+
+    &:nth-of-type(2){
+      width: 20px;
+    }
+  }
+}
+.hamburger.is-active .line:nth-child(2){
+  opacity: 0;
+}
+.hamburger.is-active .line:nth-child(1){
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.is-active .line:nth-child(3){
+  transform: translateY(-7px) rotate(-45deg);
+}
+//Menu "Hamburger" End
