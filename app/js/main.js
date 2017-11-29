@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 // To get Giphy
     $.ajax({
-        url: 'http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC&limit=5',
+        url: 'https://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC&limit=5',
         dataType: 'json',
         success: function (results) {
             var id = results.data;
