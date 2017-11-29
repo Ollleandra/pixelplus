@@ -107,6 +107,11 @@ main.container-fluid, .leftblock, .centerblock{
 }
 .centerblock{
   float: right;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 .products{
   figure{
